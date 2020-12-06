@@ -1,0 +1,15 @@
+{{>header}}
+
+<section id="viewMydestinations">
+    <h3>Your destinations</h3>
+    
+    {{#each destinations}}
+    {{>destination}}
+    {{else}}
+    <div>
+        You don't have any destinations! Add one <a style="color: gray;" href="/create">here</a>!
+    </div>
+    {{/each}}
+</section>
+
+{{>footer}}
